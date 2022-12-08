@@ -12,6 +12,5 @@ func RemoveElement(list []int, pos int) []int {
 	if pos == 0 {
 		return tail
 	}
-
 	return append(head, RemoveElement(tail, pos-1)...)
 }
