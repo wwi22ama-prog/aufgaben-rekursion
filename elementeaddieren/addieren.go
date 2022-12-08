@@ -2,6 +2,10 @@ package elementeaddieren
 
 // Liefert die Summe aller Elemente in list.
 func AddElements(list []int) int {
-	// TODO
-	return 0
+	if len(list) == 0 {
+		return 0
+	}
+	head := list[0]
+	tail := list[1:]
+	return head + AddElements(tail)
 }
